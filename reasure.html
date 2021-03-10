@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Welcome to treasure hunt</title>
   <meta charset="utf-8">
@@ -9,85 +10,114 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
-<div class="container-fluid">
-  <h1><strong>Find the Treasure Nuvvala Manoj</strong></h1>
-  <p>Click on the squares to find the <b><mark>treasure</mark></b></p>
-  <p class="text-center bg-warning" id="clicks">Number of clicks is zero</p>
-  <p class="text-center bg-danger" id="distance">Distance is unknown.</p>
-  <div class = "container">
-    <div class ="row container">
-      <div class = "col-sm-2"><img  src="book1.jpg" alt="Image of dusty book" id="0" onclick="makeGuess(0)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="1" onclick="makeGuess(1)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="2" onclick="makeGuess(2)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="3" onclick="makeGuess(3)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="4" onclick="makeGuess(4)" class="img-fluid"></div>
+  <div class="container-fluid">
+    <h1><strong>Find the Treasure Nuvvala Manoj</strong></h1>
+    <p>Click on the squares to find the <b><mark>treasure</mark></b></p>
+    <p class="text-center bg-warning" id="clicks">Number of clicks is zero</p>
+    <p class="text-center bg-danger" id="distance">Distance is unknown.</p>
+    <div class="container">
+      <div class="row container">
+        <div class="col-sm-2"><img src="book1.jpg" alt="Image of dusty book" id="0" onclick="makeGuess(0)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="1" onclick="makeGuess(1)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="2" onclick="makeGuess(2)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="3" onclick="makeGuess(3)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="4" onclick="makeGuess(4)"
+            class="img-fluid"></div>
+      </div>
+      <br>
+      <div class="row container">
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="5" onclick="makeGuess(5)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="6" onclick="makeGuess(6)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="7" onclick="makeGuess(7)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="8" onclick="makeGuess(8)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="9" onclick="makeGuess(9)"
+            class="img-fluid"></div>
+      </div>
+      <br>
+      <div class="row container">
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="10" onclick="makeGuess(10)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="11" onclick="makeGuess(11)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="12" onclick="makeGuess(12)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="13" onclick="makeGuess(13)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="14" onclick="makeGuess(14)"
+            class="img-fluid"></div>
+      </div>
+      <br>
+      <div class="row container">
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="15" onclick="makeGuess(15)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="16" onclick="makeGuess(16)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="17" onclick="makeGuess(17)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="18" onclick="makeGuess(18)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="19" onclick="makeGuess(19)"
+            class="img-fluid"></div>
+      </div>
+      <br>
+      <div class="row container">
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="20" onclick="makeGuess(20)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="21" onclick="makeGuess(21)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="22" onclick="makeGuess(22)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="23" onclick="makeGuess(23)"
+            class="img-fluid"></div>
+        <div class="col-sm-2"><img src="book1.JPG" alt="Image of dusty book" id="24" onclick="makeGuess(24)"
+            class="img-fluid"></div>
+      </div>
     </div>
-    <br>
-    <div class ="row container">
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="5" onclick="makeGuess(5)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="6" onclick="makeGuess(6)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="7" onclick="makeGuess(7)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="8" onclick="makeGuess(8)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="9" onclick="makeGuess(9)" class="img-fluid"></div>
-    </div>
-    <br>
-    <div class ="row container">
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="10" onclick="makeGuess(10)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="11" onclick="makeGuess(11)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="12" onclick="makeGuess(12)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="13" onclick="makeGuess(13)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="14" onclick="makeGuess(14)" class="img-fluid"></div>
-    </div>
-    <br>
-    <div class ="row container">
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="15" onclick="makeGuess(15)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="16" onclick="makeGuess(16)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="17" onclick="makeGuess(17)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="18" onclick="makeGuess(18)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="19" onclick="makeGuess(19)" class="img-fluid"></div>
-    </div>
-    <br>
-    <div class ="row container">
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="20" onclick="makeGuess(20)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="21" onclick="makeGuess(21)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="22" onclick="makeGuess(22)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="23" onclick="makeGuess(23)" class="img-fluid"></div>
-      <div class = "col-sm-2"><img  src="book1.JPG" alt="Image of dusty book" id="24" onclick="makeGuess(24)" class="img-fluid"></div>
-    </div>
-  </div>
-<script> ids = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14",
-  "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"]
-  var clickCount = 0;
-  var treasureLocation = 18;
+    <script>
+      ids = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14",
+        "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"
+      ]
+      var clickCount = 0;
+      var treasureLocation = 18;
 
-  const makeGuess = (pos) => {
-            let imgId;
-            for (let i = 0; i < ids.length; i++) {
-                if (i == (pos)) {
-                    imgId = ids[i];
-                    break;}
-            }
-            ++clickCount;
-            let imgInfo = document.getElementById(imgId);
-            if ((pos+1) ==
-                (treasureLocation)) {
-                imgInfo.src = "treasure.jpg"
-            }
-            else {              
-                    imgInfo.src = "empty.jpg"
-            }
-            document.getElementById("clicks").innerHTML = "No of clicks "+clickCount
-            document.getElementById("distance").innerHTML = "The distance to treasure is "+ distance(pos, treasureLocation)
+      const makeGuess = (pos) => {
+        let imgId;
+        for (let i = 0; i < ids.length; i++) {
+          if (i == (pos)) {
+            imgId = ids[i];
+            break;
+          }
         }
-        const distance = (pos, treaureLoc) => {
-            var horizontalDistance = Math.abs(Math.floor(treasureLocation / 5) - Math.floor(pos / 5))
-            var verticalDistance = Math.abs(treasureLocation % 5 - pos % 5)
-            console.log(horizontalDistance,verticalDistance)
-
-            return (verticalDistance + horizontalDistance)
+        ++clickCount;
+        let imgInfo = document.getElementById(imgId);
+        if ((pos + 1) ==
+          (treasureLocation)) {
+          imgInfo.src = "treasure.jpg"
+        } else {
+          imgInfo.src = "empty.jpg"
         }
-</script>
+        document.getElementById("clicks").innerHTML = "No of clicks " + clickCount
+        document.getElementById("distance").innerHTML = "The distance to treasure is " + distance(pos,
+          treasureLocation)
+      }
+      const distance = (pos, treaureLoc) => {
+        var horizontalDistance = Math.abs(Math.floor(treasureLocation / 5) - Math.floor(pos / 5))
+        var verticalDistance = Math.abs(treasureLocation % 5 - pos % 5)
+        console.log(horizontalDistance, verticalDistance)
+        return (verticalDistance + horizontalDistance)
+      }
+    </script>
 </body>
+
 </html>
