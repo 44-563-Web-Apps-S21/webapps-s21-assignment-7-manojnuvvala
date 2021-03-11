@@ -1,54 +1,78 @@
 <!DOCTYPE html>
-<html> <head> <style>
-    .flex-container {
-      display: flex;  flex-direction:row;
-      background-color: rgb(239, 243, 11);
-  }
+<html>
 
-.flex-container > div {  /*div children of the flex container*/
-  background-color: #9b9292; 
-  margin: 10px;  padding: 20px;  font-size: 30px;
-}
+<head>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-direction: row;
+			background-color: rgb(239, 243, 11);
+		}
 
-/* Responsive layout */
-@media (max-width: 600px) { 
-	 .flex-container{
-		 flex-direction:column;
-		 background-color: green;
-	  }
-	}
-</style></head>
+		.flex-container>div {
+			/*div children of the flex container*/
+			background-color: #9b9292;
+			margin: 10px;
+			padding: 20px;
+			font-size: 30px;
+		}
 
-<title>LISTY</title>
+		/* Responsive layout */
+		@media (max-width: 600px) {
+			.flex-container {
+				flex-direction: column;
+				background-color: green;
+			}
+		}
+	</style>
 
+	<title>LISTY</title>
 
+</head>
 
 <body>
-<h1>Manoj Nuvvala builds a list</h1>
-<input type="text" id=3001>
-		<div class="flex-container" id="target">
-		  <div class="listy">row item 1</div>   
-		  <div class="listy">row item 2</div>  
-		  <div class="listy">row item 3</div>  
-		</div>
-	
+	<h1>Manoj Nuvvala builds a list</h1>
+	<input type="text" id=3001>
+	<div class="flex-container" id="target">
+		<div class="listy">row item 1</div>
+		<div class="listy">row item 2</div>
+		<div class="listy">row item 3</div>
+	</div>
+
 	<p> Press the button to create an new element of type div and then add it to the container.
-		</p>
-		<button onclick="makeNewDiv()">Add one</button>
-	
-	
+	</p>
+	<button onclick="makeNewDiv()">Add one</button>
+
+
 </body>
 <script>
-	function makeNewDiv(){
+	function makeNewDiv() {
 		/* make the div and its text */
 		let element = document.createElement("div")
 		element.innerHTML = document.getElementById("3001").value
-		element.setAttribute("class","listy")
+		let ipvalue=document.getElementById("3001").value
+		element.setAttribute("class", "listy")
 		element.style.color = "black"
+		var listyItems=document.getElementsByClassName("listy")
+		let len = document.getElementsByClassName("listy").length
+		i=0
+		if (len > 9) {
+			for (let listItem of listyItems) {
+				
+				if(listItem.innerHTML==ipvalue){
+					listyItems[i].remove();
+				}
+				else{
+					listyItems[0].remove();
+				}
+				i++;
+			}
+			/* add it to the container */
+			
 
-		/* add it to the container */
+		}
 		document.getElementById('target').appendChild(element)
-		
 	}
 </script>
-</html>	
+
+</html>
