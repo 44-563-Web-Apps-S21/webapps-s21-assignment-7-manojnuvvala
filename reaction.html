@@ -39,7 +39,7 @@
             var ranNo = Math.floor(Math.random() * 10) + 2;
             for (let i = 0; i < ranNo+1; i++)
                 setTimeout(() => {
-                    document.getElementById('target').innerHTML = i
+                    document.getElementById('countdown').innerHTML = i
                 }, (ranNo - i) * 1000)
             setTimeout(() => {
                 if (myTime == undefined) {
