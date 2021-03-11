@@ -63,7 +63,8 @@
 					listyItems[i].remove();
 				}
 				else{
-					listyItems[0].remove();
+					let rand=Math.floor(Math.random()*listyItems.length);
+					listyItems[rand].remove();
 				}
 				i++;
 			}
